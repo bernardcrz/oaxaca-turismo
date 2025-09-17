@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Oaxaca de Juárez - Turismo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23d97706" width="1200" height="600"/><circle fill="%23f59e0b" cx="200" cy="150" r="80"/><circle fill="%23fbbf24" cx="800" cy="200" r="60"/><rect fill="%2392400e" x="100" y="400" width="200" height="150"/><rect fill="%23a16207" x="900" y="350" width="180" height="200"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .section-bg {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+    <!-- Header -->
+    <header class="bg-orange-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="text-3xl">🏛️</div>
+                    <h1 class="text-2xl font-bold">Oaxaca Turismo</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#lugares" class="hover:text-orange-200 transition-colors">Lugares</a>
+                    <a href="#restaurantes" class="hover:text-orange-200 transition-colors">Restaurantes</a>
+                    <a href="#comedores" class="hover:text-orange-200 transition-colors">Comedores</a>
+                    <a href="#plazas" class="hover:text-orange-200 transition-colors">Plazas</a>
+                    <a href="#hoteles" class="hover:text-orange-200 transition-colors">Hoteles</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center text-white">
+        <div class="text-center px-6">
+            <h2 class="text-5xl font-bold mb-4">Oaxaca de Juárez</h2>
+            <p class="text-xl mb-6">Descubre la magia de la capital cultural de México</p>
+            <button onclick="document.getElementById('lugares').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-orange-600 hover:bg-orange-700 px-8 py-3 rounded-full text-lg font-semibold transition-colors">
+                Explorar Destinos
+            </button>
+        </div>
+    </section>
+
+    <!-- Lugares que Visitar -->
+    <section id="lugares" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-orange-800 mb-12">Lugares que Visitar</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                        <div class="text-6xl">🏛️</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Zócalo de Oaxaca</h4>
+                        <p class="text-gray-600">El corazón de la ciudad, rodeado de portales coloniales y la majestuosa Catedral.</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <div class="text-6xl">🌵</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Monte Albán</h4>
+                        <p class="text-gray-600">Zona arqueológica zapoteca con vistas espectaculares de los valles centrales.</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <div class="text-6xl">🎨</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Templo de Santo Domingo</h4>
+                        <p class="text-gray-600">Impresionante arquitectura barroca con el Jardín Etnobotánico adyacente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurantes Luxury -->
+    <section id="restaurantes" class="py-16 section-bg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-orange-800 mb-12">Restaurantes de Lujo</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-4">🍽️</div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-orange-800">Casa Oaxaca</h4>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Cocina oaxaqueña contemporánea en una casona colonial del siglo XVI.</p>
+                    <div class="text-orange-600 font-semibold">$$$$ • Reservaciones recomendadas</div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-4">🥂</div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-orange-800">Pitiona</h4>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Alta cocina mexicana con ingredientes locales y técnicas innovadoras.</p>
+                    <div class="text-orange-600 font-semibold">$$$$ • Chef José Manuel Baños</div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-4">🍷</div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-orange-800">Origen</h4>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Experiencia gastronómica única con maridajes de mezcal artesanal.</p>
+                    <div class="text-orange-600 font-semibold">$$$$ • Menú degustación</div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-4">🌟</div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-orange-800">Los Danzantes</h4>
+                            <div class="text-yellow-500">⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Fusión de cocina internacional con sabores tradicionales oaxaqueños.</p>
+                    <div class="text-orange-600 font-semibold">$$$ • Terraza con vista</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comedores Tradicionales -->
+    <section id="comedores" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-orange-800 mb-12">Comedores Tradicionales</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">🫔</div>
+                        <h4 class="text-xl font-bold text-orange-800">Mercado 20 de Noviembre</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Famoso por sus tasajo, cecina enchilada y chorizo oaxaqueño.</p>
+                    <div class="text-center text-orange-600 font-semibold">$ • Auténtico sabor local</div>
+                </div>
+                
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">🌮</div>
+                        <h4 class="text-xl font-bold text-orange-800">La Abuela</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Mole tradicional preparado con recetas familiares de generaciones.</p>
+                    <div class="text-center text-orange-600 font-semibold">$ • Ambiente familiar</div>
+                </div>
+                
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">🥘</div>
+                        <h4 class="text-xl font-bold text-orange-800">Comedor Lupita</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Especialidad en tlayudas, quesillo y chocolate de mesa.</p>
+                    <div class="text-center text-orange-600 font-semibold">$ • Desayunos típicos</div>
+                </div>
+                
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">🍲</div>
+                        <h4 class="text-xl font-bold text-orange-800">Fonda Rosita</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Comida casera oaxaqueña con sazón tradicional.</p>
+                    <div class="text-center text-orange-600 font-semibold">$ • Comida corrida</div>
+                </div>
+                
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">🌶️</div>
+                        <h4 class="text-xl font-bold text-orange-800">El Islote</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Mariscos frescos con chile chilhuacle y hierba santa.</p>
+                    <div class="text-center text-orange-600 font-semibold">$$ • Especialidad en mariscos</div>
+                </div>
+                
+                <div class="card-hover bg-orange-50 rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-5xl mb-2">☕</div>
+                        <h4 class="text-xl font-bold text-orange-800">Café Central</h4>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Café de altura oaxaqueño y pan dulce artesanal.</p>
+                    <div class="text-center text-orange-600 font-semibold">$ • Desde 1950</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plazas y Centros Comerciales -->
+    <section id="plazas" class="py-16 section-bg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-orange-800 mb-12">Plazas y Centros Comerciales</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🏛️</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Plaza de la Constitución</h4>
+                    <p class="text-gray-600 text-sm">El zócalo principal con eventos culturales y mercados artesanales.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🛍️</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Plaza del Valle</h4>
+                    <p class="text-gray-600 text-sm">Centro comercial moderno con tiendas departamentales y restaurantes.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🎭</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Plaza de la Danza</h4>
+                    <p class="text-gray-600 text-sm">Espacio cultural con presentaciones de danza folclórica.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🏪</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Mercado Benito Juárez</h4>
+                    <p class="text-gray-600 text-sm">Mercado tradicional con artesanías, textiles y productos locales.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🌳</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Llano Park</h4>
+                    <p class="text-gray-600 text-sm">Parque urbano con áreas verdes y zona comercial.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🎨</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Plaza Santo Domingo</h4>
+                    <p class="text-gray-600 text-sm">Plaza histórica con artesanos y vendedores de arte local.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🛒</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Galerías Oaxaca</h4>
+                    <p class="text-gray-600 text-sm">Centro comercial con cines, tiendas y patio de comidas.</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl mb-4">🌺</div>
+                    <h4 class="text-lg font-bold text-orange-800 mb-2">Plaza de las Flores</h4>
+                    <p class="text-gray-600 text-sm">Pequeña plaza con florerías y ambiente bohemio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hoteles -->
+    <section id="hoteles" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-orange-800 mb-12">Hoteles Recomendados</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-orange-400 to-red-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🏨</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Hotel Casa Oaxaca</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">Boutique hotel de lujo en el centro histórico.</p>
+                        <div class="text-orange-600 font-semibold">$$$$ • Spa incluido</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🏛️</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Quinta Real Oaxaca</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">Ex-convento del siglo XVI convertido en hotel de lujo.</p>
+                        <div class="text-orange-600 font-semibold">$$$$ • Patrimonio histórico</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🌟</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Hotel de la Parra</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">Hotel boutique con arquitectura colonial y jardines.</p>
+                        <div class="text-orange-600 font-semibold">$$$ • Piscina y jardín</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-indigo-400 to-purple-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🏨</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Camino Real Oaxaca</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">Hotel en ex-convento con amplios jardines y piscina.</p>
+                        <div class="text-orange-600 font-semibold">$$$ • Centro de convenciones</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-teal-400 to-green-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🏠</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Casa de las Bugambilias</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">B&B acogedor con desayuno tradicional incluido.</p>
+                        <div class="text-orange-600 font-semibold">$$ • Ambiente familiar</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-32 bg-gradient-to-r from-rose-400 to-orange-500 flex items-center justify-center">
+                        <div class="text-4xl text-white">🌺</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-orange-800 mb-2">Hotel Maela</h4>
+                        <div class="text-yellow-500 mb-2">⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-3">Hotel moderno con excelente ubicación y precio accesible.</p>
+                        <div class="text-orange-600 font-semibold">$$ • WiFi gratuito</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h5 class="text-xl font-bold mb-4">Oaxaca Turismo</h5>
+                    <p class="text-orange-200">Descubre la riqueza cultural, gastronómica y arquitectónica de Oaxaca de Juárez.</p>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold mb-4">Contacto</h5>
+                    <div class="space-y-2 text-orange-200">
+                        <p>📧 info@oaxacaturismo.com</p>
+                        <p>📞 +52 951 123 4567</p>
+                        <p>📍 Centro Histórico, Oaxaca</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold mb-4">Síguenos</h5>
+                    <div class="flex space-x-4">
+                        <button class="bg-orange-700 hover:bg-orange-600 p-2 rounded-full transition-colors">📘</button>
+                        <button class="bg-orange-700 hover:bg-orange-600 p-2 rounded-full transition-colors">📷</button>
+                        <button class="bg-orange-700 hover:bg-orange-600 p-2 rounded-full transition-colors">🐦</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-orange-700 mt-8 pt-8 text-center text-orange-200">
+                <p>&copy; 2024 Oaxaca Turismo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9805da908480aec5',t:'MTc1ODA4MzI3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
